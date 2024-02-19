@@ -1,0 +1,11 @@
+div{
+    /* padding: 10px; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+img{
+    width: 200px;
+}

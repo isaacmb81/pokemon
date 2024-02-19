@@ -1,0 +1,32 @@
+<div id="general">
+
+
+    <div id="carta1">
+        <h1 style="color: {{pokemon.types[0].type.name | colors}}">{{pokemon.name}}</h1>
+        <img src="{{pokemon.sprites.other?.home?.front_default}}">
+        <label>
+            Especie:&nbsp;
+            <p>{{pokemon.species.name}}</p>
+        </label>
+        <label>
+            Tipo:&nbsp;
+            <p *ngFor="let tipo of pokemon.types">{{tipo.type.name}}&nbsp;</p>
+        </label>
+    </div>
+
+    <div id="contenedorEspecificaciones">
+        <div id="carta2">
+            <h2 class="yellow">Habilidades</h2>
+            <p *ngFor="let ability of pokemon.abilities">{{ability.ability.name}}</p>
+        </div>
+
+
+        <div id="carta3">
+            <p>XP base: {{pokemon.base_experience}}</p>
+            <p>Altura: {{pokemon.height}}</p>
+            <p>Peso: {{pokemon.weight}}</p>
+            <p>Orden: {{pokemon.order}}</p>
+        </div>
+    </div>
+
+</div>

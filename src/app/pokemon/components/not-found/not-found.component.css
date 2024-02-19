@@ -1,0 +1,14 @@
+div{
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: rgb(249, 200, 47);
+}
+img{
+    border-radius: 10px;
+}

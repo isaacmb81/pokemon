@@ -1,0 +1,11 @@
+<div id="general">
+    <input type="text" placeholder="Buscar pokemon..." (keyup)="onChange(inputText.value)" #inputText>
+
+    <div id="nombrePokemons">
+        <p *ngFor="let pokemon of arrayFiltrado; let i = index">
+            <a [routerLink]="['/pokemon/', (isFiltered ? filteredIndexes[i] + 1 : i + 1)]">
+              {{pokemon.name}}
+            </a>
+          </p>
+    </div>
+</div>
